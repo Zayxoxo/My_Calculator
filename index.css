@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-weight: bold;
+
+
+}
+.cal-container {
+  width: 100%;
+  height: 100lvh;
+  background: rgba(56, 201, 211, 0.466);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.calculator {
+  padding: 2rem;
+  border-radius: 10px;
+  background: grey;
+}
+.calculator form input {
+  border: 0;
+  outline: 0;
+  width: 5rem;
+  height: 2.5rem;
+  cursor: pointer;
+  margin: 10px;
+  border-radius: 15px;
+  border: none;
+}
+form .view {
+  display: flex;
+  justify-content: flex-end;
+  margin: 50px 0;
+  
+}
+form .view input {
+  text-align: right;
+  flex: 2;
+  font-size: 30px;
+  font-weight: 300;
+  box-shadow: none;
+  overflow: hidden;
+  height: 5rem;
+  max-width: 500px;
+  
+  
+}
+form .colored input{
+    background-color: pink;
+}
+.color{
+    background-color: pink;
+}
+form input.equals{
+    width: 13.5em;
+}
+form input:hover {
+    background-color: aliceblue;
+}
+
+form input:active {
+    background-color: lightgray;
+    transform: scale(0.95); 
+}
+/* Mobile Responsiveness */
+@media (max-width: 767px) {
+    .calculator {
+      padding: 1rem;
+      max-width: 100%;
+    }
+  
+    form .view input {
+      font-size: 24px;
+      height: 4rem;
+    }
+  
+    form input {
+      width: 4rem;
+      height: 2.5rem;
+    }
+  
+    .equals {
+      width: 100%;
+    }
+  
+    /* For small screens */
+    .calculator form div {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 8px;
+    }
+    
+    .calculator form input {
+      width: 100%;
+      height: 3rem;
+      font-size: 18px;
+    }
+    
+    .color {
+      background-color: lightpink;
+    }
+  }
+  
+  /* Tablet Responsiveness*/
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .calculator {
+      padding: 2rem;
+    }
+  
+    form .view input {
+      font-size: 28px;
+      height: 4rem;
+    }
+  
+    .calculator form div {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+    }
+  
+    .calculator form input {
+      width: 100%;
+      height: 3.5rem;
+    }
+  }
